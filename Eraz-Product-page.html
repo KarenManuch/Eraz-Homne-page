@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Eraz-Product-page.css">
+    <title>Yeraz Kids Center / Product page</title>
+</head>
+<body id="body">
+  <div class="image_list" id="image">
+    <div class="img_mobile_line"></div>
+    <img class="close_img" onclick="close_img()" src="img/img_close.svg" alt="">
+    <div class="image_block">
+        <div class="image_switch">
+          <img class="left_rotate arrow" src="img/right_arrow.svg" alt="">
+          <div class="main_image"></div>
+          <img class="arrow" src="img/right_arrow.svg" alt="">
+        </div>
+      <div class="image_row">
+        <img src="img/order_main_img.svg" alt="">
+        <img src="img/order_main_img.svg" alt="">
+        <img src="img/order_main_img.svg" alt="">
+        <img src="img/order_main_img.svg" alt="">
+        <img src="img/order_main_img.svg" alt="">
+        <img class="active_image" src="img/order_main_img.svg" alt="">
+      </div>
+     </div>
+    </div>
+    <div class="mobile_line"></div>
+    <div class="advertising">
+        <div class="adv_text">
+          <div class="adv_text1">FREE STANDARD SHIPPING ON ORDERS OVER</div>
+          <div class="adv_text2">$50+ FREE RETURNS<b><a href="">SEE DETAILS</a></b></div>
+        </div>
+    </div>
+    <div class="top_numbers">
+      <div class="number_links">
+        <div class="numbers">
+            <a href="tel:+37455502944"><img src="img/tel_icon.svg" alt="">055502944</a>
+            <a href="tel:+37455502944" class="mobile_hide">055502944</a>
+            <a href="tel:+37455502944" class="hide_number">055502944</a>
+            <div class="sm_number"> 
+              <a href="">055502944</a>(Ներքին համար 4)
+            </div>
+            <div class="languages" id="languages" onclick="hide_lang()">Հայերեն <img src="../eraz/img/arrow_down.svg" alt=""></div>
+            <div class="hide_lang" id="hidelang">
+              <a href="">Русслий</a>
+              <a href="">English</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <header class="header" id="header">
+      <div class="header_content">
+        <div class="header_items">
+            <img class="logo" id="logo" src="img/logo.svg" alt="">
+            <div class="input">
+              <input type="text" id="input">
+              <div class="search_img" onclick="input()">
+              <img src="img/search.svg" alt="">
+              </div>
+            </div>
+            <img class="buy_logo" src="img/buy.svg" height="26px" alt="">
+            <div class="changing_img"></div>
+        </div>
+        <ul class="header_links" id="header_links">
+           <li class="no_type"><a class="header_items_a" id="header_item1" onclick="hide_link()">Հագուստ<img src="img/arrow_down.svg" alt=""></a></li>
+           <li class="no_type"><a class="header_items_a" id="header_item2" onclick="hide_link()">Կերակրում<img src="img/arrow_down.svg" alt=""></a></li>
+           <li class="no_type"><a class="header_items_a" id="header_item3" onclick="hide_link()">Խաղալիք<img src="img/arrow_down.svg" alt=""></a></li>
+           <li class="no_type"><a class="header_items_a" id="header_item4" onclick="hide_link()">Ճանապարհորդություն<img src="img/arrow_down.svg" alt=""></a></li>
+           <li class="no_type"><a class="header_items_a" id="header_item5" onclick="hide_link()">Խնամք և լոգանք<img src="img/arrow_down.svg" alt=""></a></li>
+           <li class="no_type" id="hide"><a class="header_items_a" id="header_item6" onclick="hide_link()">Մանկական սենյակ<img src="img/arrow_down.svg" alt=""></a></li>
+           <li class="no_type" id="hide"><a class="header_items_a" id="header_item7" onclick="hide_link()">Ապրանքանիշներ</a></li>
+           <li class="no_type" id="more"><a class="header_items_a" id="header_item8" onclick="hide_link()">Ավելին<img src="img/arrow_down.svg" alt=""></a></li>
+        </ul> 
+       </div>
+    </header>
+    <main>
+        <div class="breadcrumb_container">
+          <ul class="breadcrumb_list">
+            <li class="no_type"><a href="" class="breadcrumb_links one">Գլխավոր<img src="img/right.svg" alt=""></a></li>
+            <li class="no_type"><a href="" class="breadcrumb_links two">Տեսականի<img src="img/right.svg" alt=""></a></li>
+            <li class="no_type"><a href="" class="breadcrumb_links three">Կերակրում<img src="img/right.svg" alt=""></a></li>
+            <li class="no_type"><a href="" class="breadcrumb_links four">Նորածնի կերակրում<img src="img/right.svg" alt=""></a></li>
+            <li class="no_type"><a href="" class="breadcrumb_links five">Շշով կերակրում<img src="img/right.svg" alt=""></a></li>
+            <li class="no_type active"><a href="" class="breadcrumb_links six"><span class="no_slice"> Tommee Tippee կերակրման շիշ Advanced anti colic</span>
+              <span class="slice">սիլիկոնե ծծակով, վարդագույն 260 մլ, 0+</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="images" onclick="open_img()">
+          <div class="main_img">
+            <img src="img/order_main_img.svg" alt="">
+          </div>
+          <div class="img_list">
+            <img src="img/order_main_img.svg" alt="">
+            <img src="img/order_main_img.svg" alt="">
+            <img src="img/order_main_img.svg" alt="">
+            <img src="img/order_main_img.svg" alt="">
+            <img src="img/order_main_img.svg" alt="">
+          </div>
+        </div>
+        <div class="item_info">
+          <div class="top_info">
+            <h1 class="main_item_description">Tommee Tippee կերակրման շիշ Advanced anti colic, սիլիկոնե ծծակով, վարդագույն 260 մլ, 0+</h1>
+            <div class="top_rate">
+              <div class="stars">
+                <img src="img/fill_star.svg" alt="">
+                <img src="img/fill_star.svg" alt="">
+                <img src="img/fill_star.svg" alt="">
+                <img src="img/Star.svg" alt="">
+                <img src="img/Star.svg" alt="">
+              </div>
+              <span class="rate_number">(3)</span> 
+            </div>
+             <div class="types">
+              <div class="description_name">
+                <div class="word top_price">Արժեք:</div>
+                <div class="word amount">Քանակ:</div>
+                <div class="word brand">Բրենդ:</div>
+                <div class="word code">Կոդ:</div>
+                <div class="word code2">Շտրիխ կոդ:</div>
+              </div>
+              <div class="description_info">
+                <div class="new_price">2500 <sup class="uper">դր</sup> <div class="old_price">4900դր</div></div> 
+                <div class="number_choose">
+                  <img class="back" src="img/next.svg" alt="">
+                  <span class="present_number"><b>1</b></span>
+                  <img class="next" src="img/next.svg" alt="">
+                </div>
+                <div class="firm_name">Tommee Tippee</div>
+                <div class="code_numbers">522576TT</div>
+                <div class="code_numbers">5010415225764</div>
+              </div>
+             </div>
+             <div class="color_block">
+               <div class="word color_word">Գույնը</div>
+               <div class="color_variants">
+                 <div class="color_variants_first_row">
+                   <div class="item_type" onclick="color_change()">Սև</div>
+                   <div class="item_type active_color" onclick="color_change()">Սպիտակ</div>
+                   <div class="item_type" onclick="color_change()">Կանաչ</div>
+                   <div class="item_type replace" onclick="color_change()">Կարմիր</div>
+                 </div>
+                 <div class="color_variants_second_row"> 
+                   <div class="item_type" onclick="color_change()">Մանուշակագույն</div> 
+                   <div class="item_type replace1" onclick="color_change()">Կարմիր</div>
+                 </div>
+               </div>
+             </div>
+             <div class="size_and_width">
+              <div class="size_row">
+                <div class="word">Չափսը և տարիքը</div>
+                <div class="size_change">
+                <div class="row_size">
+                  <div class="size_and_width_variants">
+                    <div class="item_type">0-3</div>
+                    <div class="item_type">3-6</div>
+                    <div class="item_type">6-10</div>
+                  </div>
+                  <div class="changing_sizes">
+                    <div class="item_type active_item">10-14</div>
+                    <div class="item_type hide_size">14-18</div>
+                  </div>
+                </div>
+                <div class="item_type hidden_size">14-18</div>
+               </div>
+              </div>
+             </div>
+          </div> 
+          <div class="bottom_info">
+            <div class="word">Պատյանի կտորի գորցվածքը</div>
+            <div class="material">
+              <div class="item_type">Կաշի</div>
+              <div class="item_type active_item">Կտոր</div>
+            </div>
+            <button class="buy"><div class="button_img"></div> Ավելացնել զամբյուղ</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <section>
+      <div class="description_block">
+        <div class="description_heading">
+          <div class="comments active_comment" id="description" onclick="description()">Նկարագրություն</div>
+          <div class="comments" id="comment" onclick="comment()">Մեկնաբանություններ</div>
+        </div>
+        <div class="properties_img"> 
+        <div class="main_description_block">
+          <!--DESCRIPTION-->
+          <div class="properties none" id="properties">
+            <p class="first_property">Սիլիկոնե ծծակով կերակրման շիշը կանխում է մանկիկի փորիկի մեջ գազիկների առաջացումը.</p>
+            <ul class="properties_list">
+              <li class="main_property">շնորհիվ հատուկ փականի՝ կրճատում  է կերակրման ժամանակ երեխայի՝ օդ կուլ տալու հավանականությունը ,կանխում  գազիկների առաջացումը,</li>
+              <br>
+              <li class="main_property">ապացուցված է՝ մանկիկի մոտ 80%-ով քիչ գազիկներ են առաջանում,</li>
+              <br>
+              <li class="main_property">ունի նորարարական ծծակ, որը կրկնում է մայրական կրծքի ձևը և հոսքը,</li>
+              <br>
+              <li class="main_property">կերակրման շշի ծծակը փափուկ է, էլաստիկ, պատրաստված թափանցիկ սիլիկոնից,</li>
+              <br>
+              <li class="main_property">շշի լայն վերնամասը  հարմար է դարձնում հեշտությամբ հեղուկ լցնելը և ապա լվանալը ,</li>
+              <br>
+              <li class="main_property">շնորհիվ դիզայնի՝ շիշը առավելագույն մոտեցվում է մանկիկին,</li>
+              <br>
+              <li class="main_property">շշի մեջ ներկառուցված ձողիկը նաև հանդիսանում է ջերմաստիճանի ցուցիչ,</li>
+              <br>
+              <li class="main_property">նախատեսված է ծնված օրվանից կերակրման համար,</li>
+              <br>
+              <li class="main_property">չի պարունակում BPA (օրգանական սինթետիկ բաղադրիչ):</li>
+            </ul>
+            <p class="storage_rules">Խնամքի կանոններ</p>
+          </div>
+          <!--NO COMMENT-->
+          <div class="no_comment_yet" id="disappear">
+            <div class="comment_heading">
+              <div class="comment_heading_txt">Վարկանիշ (0)</div>
+              <div class="item_rate">
+                <img src="img/Star.svg" alt="">
+                <img src="img/Star.svg" alt="">
+                <img src="img/Star.svg" alt="">
+                <img src="img/Star.svg" alt="">
+                <img src="img/Star.svg" alt="">
+              </div>
+            </div>
+            <hr>
+            <p class="info_txt">Տվյալ ապրանքը դեռ նկարագրություն չունի:</p>
+          </div>
+          <!--COMMENT-->
+          <div class="comments_block none" id="comments_block">
+            <div class="comment_heading">
+              <div class="comment_heading_txt">Վարկանիշ (3)</div>
+              <div class="item_rate">
+                <img src="img/fill_star.svg" alt="">
+                <img src="img/fill_star.svg" alt="">
+                <img src="img/fill_star.svg" alt="">
+                <img src="img/Star.svg" alt="">
+                <img src="img/Star.svg" alt="">
+              </div>
+            </div>
+            <hr>
+            <ul class="comments_list">
+              <li class="comment">
+                <div class="date_and_name">
+                  <p class="name">Աննա Ստեփանյան</p>
+                  <p class="date">10.09.2021</p>
+                </div>
+                <div class="autor_rate">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/Star.svg" alt="">
+                  <img src="img/Star.svg" alt="">
+                </div>
+                <p class="comment_txt">Շատ շնորհակալ եմ:</p>
+              </li>
+              <li class="comment">
+                <div class="date_and_name">
+                  <p class="name">Հայկ Նահապետյան</p>
+                  <p class="date">21.04.2020</p>
+                </div>
+                <div class="autor_rate">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/fill_star.svg" alt="">
+                </div>
+                <p class="comment_txt"></p>
+              </li>
+              <li class="comment">
+                <div class="date_and_name">
+                  <p class="name">Արման Պողոսյան</p>
+                  <p class="date">03.12.2018</p>
+                </div>
+                <div class="autor_rate">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/Star.svg" alt="">
+                </div>
+                <p class="comment_txt">Շնորհակալ եմ:</p>
+              </li>
+              <li class="comment">
+                <div class="date_and_name">
+                  <p class="name">Արման Պողոսյան</p>
+                  <p class="date">03.12.2018</p>
+                </div>
+                <div class="autor_rate">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/Star.svg" alt="">
+                </div>
+                <p class="comment_txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+                  sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                  magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                   gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="comment">
+                <div class="date_and_name">
+                  <p class="name">Արման Պողոսյան</p>
+                  <p class="date">03.12.2018</p>
+                </div>
+                <div class="autor_rate">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/fill_star.svg" alt="">
+                  <img src="img/Star.svg" alt="">
+                </div>
+                <p class="comment_txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                  invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+                <div class="more_comment">ավելին</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card_img"></div>
+       </div>
+      </div> 
+    </section>
+     <div class="card_line">
+      <div class="card_row">
+       <div class="card_block">
+         <div class="card">
+           <img src="img/baby_carriage.svg" alt="">
+           <p class="item_description">CHICCO Զբոսասայլակ Trolley Me 0+</p>
+           <p class="price">98900դր</p>
+           <div class="rate">
+             <img src="img/fill_star.svg" alt="">
+             <img src="img/fill_star.svg" alt="">
+             <img src="img/fill_star.svg" alt="">
+             <img src="img/Star.svg" alt="">
+             <img src="img/Star.svg" alt="">
+           </div>
+           <button class="order_btn">
+            <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+           </button>
+         </div>
+       </div>
+       <div class="card_block">
+         <div class="card">
+           <img src="img/baby_carriage1.svg" alt="">
+           <p class="item_description">CHICCO Կերակրման մանկական <span class="dot">&nbsp;աթոռ</span><span class="slice1">&nbsp;Polly</span><span class="slice2">&nbsp;Magic<span class="slice3">&nbsp;Relax</span></p>
+           <p class="price">148900</p>
+           <div class="rate">
+             <img src="img/fill_star.svg" alt="">
+             <img src="img/fill_star.svg" alt="">
+             <img src="img/fill_star.svg" alt="">
+             <img src="img/fill_star.svg" alt="">
+             <img src="img/Star.svg" alt="">
+           </div>
+           <button class="order_btn">
+            <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+           </button>
+         </div>
+       </div>
+      </div>
+      <div class="card_row">  
+       <div class="card_block">
+         <div class="card">
+           <img src="img/baby_carriage2.svg" alt="">
+           <p class="item_description">CHICCO Կերակրման աթոռ-մահճակալ Baby<span class="slice4">Hug 4in1</span></p>
+           <p class="price">188900</p>
+           <div class="rate">
+             <img src="img/fill_star.svg" alt="">
+             <img src="img/fill_star.svg" alt="">
+             <img src="img/fill_star.svg" alt="">
+             <img src="img/fill_star.svg" alt="">
+             <img src="img/Star.svg" alt="">
+           </div>
+           <button class="order_btn">
+            <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+           </button>
+         </div>
+       </div>
+       <div class="card_block">
+         <div class="card">
+           <img src="img/baby_carriage3.svg" alt="">
+           <p class="item_description">CHICCO Մեքենայի նստատեղ Akita Ombra 1/2/3</p>
+           <p class="price">144900</p>
+           <div class="rate">
+             <img src="img/fill_star.svg" alt="">
+             <img src="img/fill_star.svg" alt="">
+             <img src="img/Star.svg" alt="">
+             <img src="img/Star.svg" alt="">
+             <img src="img/Star.svg" alt="">
+           </div>
+           <button class="order_btn">
+            <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+           </button>
+         </div>
+       </div>
+      </div>
+    </div>
+    </main> 
+    <footer class="footer">
+      <div class="footer_content">
+        <div class="info">
+          <ul class="about top">
+            <li><a class="info_text" href=""><b>Մեր մասին</b></a></li>
+            <li><a class="info_text" href="">ԵՐԱԶ նվեր քարտ</a></li>
+            <li><a class="info_text" href="">Առաքման պայմանները</a></li>
+            <li><a class="info_text" href="">Վերադարձ և փոխանակում</a></li>
+            <li><a class="info_text" href="">Մեր խանութ սրահների հասցեները</a></li>
+            <li><a class="info_text last" href="">Գաղտնիության քաղաքականություն</a></li>
+          </ul>
+        </div>
+        <div class="info">
+          <ul class="about">
+            <li><a class="info_text" href="">Հասցե՝<b> Ազատության պողոտա 27/3</b></a></li>
+            <li><a class="info_text" href="">Հեռ․՝<b> 055 50 29 44, 033 50 29 44</b></a></li>
+            <li><a class="info_text" href=""><b> 012 30 33 03 </b>(Ներքին համար 4)</a></li>
+            <li><a class="info_text last" href="">Էլ․ հասցե՝<b> info@yerazkids.am</b></a></li>
+            <li>
+             <div class="chat"> 
+              <a href=""><img src="img/facebook.svg" alt=""></a>
+              <a href=""><img src="img/instagram.svg" alt=""></a>
+              <a href=""><img src="img/youtube.svg" alt=""></a>
+             </div>
+            </li>
+          </ul>
+        </div>
+        <div class="info">
+          <ul class="about last_div">
+            <li><a class="info_text" href=""><b>Chicco </b>  չափսերի ուղեցույց</a></li>
+            <li><a class="info_text" href=""><b>Prenatal </b>  չափսերի ուղեցույց</a></li>
+            <li><a class="info_text" href=""><b>Benetton </b>  չափսերի ուղեցույց</a></li>
+            <li><a class="info_text last" href=""><b>Ընդհանուր </b>  չափսերի ուղեցույց</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright_text">© 2021 Բոլոր իրավունքները պաշտպանված են:</div>
+      <div class="container-fluid credit_card">
+        <img src="img/arca.svg" alt="">
+        <img src="img/visa.svg" alt="">
+        <img src="img/master_card.svg" alt="">
+        <img src="img/cash.svg" alt="">
+        <img src="img/idram.svg" alt="">
+      </div>
+    </footer>
+    
+    <script src="Eraz-Product-page.js"></script>
+</body>
+</html>
